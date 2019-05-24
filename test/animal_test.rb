@@ -4,7 +4,7 @@ require './lib/animal'
 require './lib/skill'
 require 'pry'
 
-class AnimalTest <Minitest::Test
+class AnimalTest < Minitest::Test
   def test_it_exists
     sit = Skill.new("sit")
     down = Skill.new("down")
@@ -15,7 +15,6 @@ class AnimalTest <Minitest::Test
   end
 
   def test_animal_has_attributes
-    skip
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
@@ -29,7 +28,6 @@ class AnimalTest <Minitest::Test
 
 
   def test_it_can_forget_skills
-    skip
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
@@ -41,7 +39,6 @@ class AnimalTest <Minitest::Test
   end
 
   def test_it_can_count_how_many_party_tricks_an_animal_has
-    skip
     sit = Skill.new("sit")
     down = Skill.new("down")
     play_dead = Skill.new("play dead", true)
@@ -56,7 +53,6 @@ class AnimalTest <Minitest::Test
 
 
     def test_it_can_list_commands_by_party_trick_or_not
-      skip
       sit = Skill.new("sit")
       down = Skill.new("down")
       play_dead = Skill.new("play dead", true)

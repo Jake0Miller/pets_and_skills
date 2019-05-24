@@ -4,7 +4,7 @@ require './lib/animal'
 require './lib/skill'
 require 'pry'
 
-class SkillTest <Minitest::Test
+class SkillTest < Minitest::Test
   def test_it_exists
     sit = Skill.new("sit")
 
@@ -18,7 +18,7 @@ class SkillTest <Minitest::Test
   end
 
   def test_party_trick_is_defaulted_false
-    sit  = Skill.new("sit")
+    sit = Skill.new("sit")
 
     assert_equal false, sit.party_trick?
   end
